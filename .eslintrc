@@ -3,13 +3,9 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "prettier/@typescript-eslint",
-    "prettier/react"
+  "plugins": [
+    "@typescript-eslint",
+    "react"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -19,11 +15,18 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint"
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/react"
   ],
   "rules": {
+    // This is needed because of the new JSX Transformer.
+    // See: https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html
+    // See: 
     "react/react-in-jsx-scope": 0
   }
 }
