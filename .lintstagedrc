@@ -3,5 +3,5 @@
     "prettier --write",
     "eslint --cache --fix"
   ],
-  "*.{json,css,scss,md}": "prettier --write"
+  "*.{json,css,scss}": "prettier --write"
 }
