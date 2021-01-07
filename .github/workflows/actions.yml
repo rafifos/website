@@ -1,0 +1,16 @@
+name: Lint GitHub Actions
+
+on: [pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run actions-linter on all local GitHub Actions
+        uses: cschleiden/actions-linter
+        with:
+          workflows: ['.github/workflows/*{.yaml,.yml}']
