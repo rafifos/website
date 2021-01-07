@@ -1,0 +1,15 @@
+name: Check if the last COMMIT_MSG complains with the Conventional Commits Spec
+
+on: [pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Run commitlint against the last commit message
+        uses: wagoid/commitlint-github-action@v2
