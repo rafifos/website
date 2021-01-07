@@ -1,0 +1,16 @@
+name: Check formatting with Prettier
+
+on: [pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run "prettier --check" on repository
+        uses: actionsx/prettier@v2
+        with:
+          args: --check "**/*.{js,jsx,ts,tsx,json,css,scss,md}"
