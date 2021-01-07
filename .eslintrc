@@ -5,7 +5,8 @@
   },
   "plugins": [
     "@typescript-eslint",
-    "react"
+    "react",
+    "jsx-a11y"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -19,6 +20,8 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
     "prettier",
     "prettier/@typescript-eslint",
     "prettier/react"
