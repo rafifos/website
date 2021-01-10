@@ -1,0 +1,4 @@
+[submodule "submodules/nord"]
+	url = git@github.com:arcticicestudio/nord.git
+	branch = feature/gh-36-javascript-implementation
+	path = submodules/nord
