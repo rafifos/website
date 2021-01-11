@@ -5,6 +5,7 @@
   },
   "plugins": [
     "@typescript-eslint",
+    "import",
     "react",
     "jsx-a11y"
   ],
@@ -19,17 +20,54 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:import/react",
+    "plugin:import/typescript",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
     "prettier",
-    "prettier/@typescript-eslint",
-    "prettier/react"
+    "prettier/react",
+    "prettier/@typescript-eslint"
   ],
   "rules": {
     // This is needed because of the new JSX Transformer.
     // See: https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html
-    // See: 
-    "react/react-in-jsx-scope": 0
+    "react/react-in-jsx-scope": "off",
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ],
+    "import/newline-after-import": "error",
+    "import/group-exports": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect",
+      "linkComponents": [
+        "Link"
+      ]
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "import/resolver": {
+      "typescript": {
+        "project": [
+          "tsconfig.json"
+        ]
+      }
+    },
+    "import/ignore": [
+      "submodules/*"
+    ]
   }
 }

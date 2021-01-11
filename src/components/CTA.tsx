@@ -1,5 +1,7 @@
 import { Link as ChakraLink } from '@chakra-ui/react'
-import { Container } from './Container'
+import Link from 'next/link'
+
+import { Container } from '@components/Container'
 
 export const CTA = (): JSX.Element => (
   <Container
@@ -10,6 +12,7 @@ export const CTA = (): JSX.Element => (
     py={2}
   >
     <ChakraLink
+      as={Link}
       isExternal
       textDecoration='none'
       href='https://github.com/rafifos/website'
