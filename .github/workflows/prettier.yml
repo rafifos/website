@@ -13,4 +13,4 @@ jobs:
       - name: Run "prettier --check" on repository
         uses: actionsx/prettier@v2
         with:
-          args: --check "**/*.{js,jsx,ts,tsx,json,css,scss,md}"
+          args: --check "**/*.{js,jsx,ts,tsx,json,css,scss}"
