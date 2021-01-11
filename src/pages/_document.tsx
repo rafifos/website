@@ -1,4 +1,3 @@
-import { ColorModeScript } from '@chakra-ui/react'
 import NextDocument, { Head, Html, Main, NextScript } from 'next/document'
 
 export default class Document extends NextDocument {
@@ -10,7 +9,6 @@ export default class Document extends NextDocument {
           <meta name='description' content='Made with lots of ❤️ and ☕' />
         </Head>
         <body>
-          <ColorModeScript />
           <Main />
           <NextScript />
         </body>

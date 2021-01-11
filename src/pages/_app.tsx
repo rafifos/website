@@ -1,12 +1,7 @@
-import { ChakraProvider } from '@chakra-ui/react'
 import { AppProps } from 'next/app'
 
 function App({ Component, pageProps }: AppProps): JSX.Element {
-  return (
-    <ChakraProvider resetCSS>
-      <Component {...pageProps} />
-    </ChakraProvider>
-  )
+  return <Component {...pageProps} />
 }
 
 export default App
