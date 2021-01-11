@@ -65,9 +65,6 @@
           "tsconfig.json"
         ]
       }
-    },
-    "import/ignore": [
-      "submodules/*"
-    ]
+    }
   }
 }
