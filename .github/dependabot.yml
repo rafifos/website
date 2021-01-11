@@ -6,7 +6,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
       timezone: "America/Sao_Paulo"
     assignees:
       - "rafifos"
@@ -15,4 +15,4 @@ updates:
     labels:
       - "dependency"
     open-pull-requests-limit: 3
-    target-branch: "main"
+    target-branch: "develop"
