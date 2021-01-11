@@ -1,4 +1,4 @@
-import { Head } from 'next/document'
+import { Head } from 'next/head'
 
 import { CTA } from '@components/CTA'
 import { Container } from '@components/Container'
