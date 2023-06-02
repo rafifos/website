@@ -1,3 +1,4 @@
+import { ExternalLink } from "@/atoms/external-link";
 import { Logo } from "@/atoms/logo";
 import { SwitchTheme } from "@/molecules/theme-switcher";
 
@@ -9,6 +10,7 @@ function Header() {
       </div>
       <div className="navbar-end">
         <SwitchTheme />
+        <ExternalLink type="project-source" />
       </div>
     </header>
   );
