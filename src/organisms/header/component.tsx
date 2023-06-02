@@ -1,6 +1,6 @@
 import { ExternalLink } from "@/atoms/external-link";
 import { Logo } from "@/atoms/logo";
-import { SwitchTheme } from "@/molecules/theme-switcher";
+import { ThemeSwitcher } from "@/molecules/theme-switcher";
 
 function Header() {
   return (
@@ -9,7 +9,7 @@ function Header() {
         <Logo className="btn-ghost btn" />
       </div>
       <div className="navbar-end">
-        <SwitchTheme />
+        <ThemeSwitcher />
         <ExternalLink type="project-source" />
       </div>
     </header>

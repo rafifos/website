@@ -5,7 +5,7 @@ import { MdExpandMore, MdOutlinePalette } from "react-icons/md";
 
 import { themes } from "@/molecules/theme-switcher/constants";
 
-function SwitchTheme() {
+function ThemeSwitcher() {
   const { setTheme } = useTheme();
 
   return (
@@ -27,4 +27,4 @@ function SwitchTheme() {
   );
 }
 
-export default SwitchTheme;
+export default ThemeSwitcher;
