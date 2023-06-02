@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { MdOutlinePalette } from "react-icons/md";
+import { MdExpandMore, MdOutlinePalette } from "react-icons/md";
 
 import { themes } from "@/molecules/theme-switcher/constants";
 
@@ -10,8 +10,8 @@ function SwitchTheme() {
 
   return (
     <details className="dropdown-end dropdown z-40">
-      <summary className="btn-ghost btn-circle btn m-1">
-        <MdOutlinePalette size={24} />
+      <summary className="btn-ghost btn m-1">
+        <MdOutlinePalette size={24} /> Tema <MdExpandMore />
       </summary>
 
       <ul className="max-w-52 dropdown-content menu rounded-box max-h-[70vh] flex-nowrap overflow-scroll p-2 shadow-lg">
