@@ -9,7 +9,7 @@ function SwitchTheme() {
   const { setTheme } = useTheme();
 
   return (
-    <details className="dropdown dropdown-end">
+    <details className="dropdown dropdown-end z-40">
       <summary className="m-1 btn">
         <MdOutlinePalette size={24} /> Trocar tema
       </summary>
