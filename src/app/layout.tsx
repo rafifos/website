@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 import { Analytics } from "@vercel/analytics/react";
+import clsx from "clsx";
 import { Inter } from "next/font/google";
 
 import Providers from "@/app/providers";
@@ -18,9 +19,11 @@ const metadata: Metadata = {
 };
 
 function RootLayout({ children }: { children: ReactNode }) {
+  const classNames = clsx(inter.className, "mx-auto flex h-screen flex-col");
+
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body className={`${inter.className} mx-auto flex h-screen flex-col`}>
+      <body className={classNames}>
         <Providers>
           <Header />
           {children}
