@@ -9,7 +9,7 @@ function Header() {
   return (
     <header className="navbar">
       <div className="navbar-start">
-        <Link href="/" className={`${jetBrainsMono.className} btn btn-ghost normal-case text-xl`}>
+        <Link href="/" className={`${jetBrainsMono.className} btn-ghost btn text-xl normal-case`}>
           Rafifos//
         </Link>
       </div>

@@ -1,34 +1,11 @@
-import Image from "next/image";
-
-import { Contact } from "@/atoms/contact";
+import { Hero } from "@/organisms/hero";
+import { MyExperience } from "@/organisms/my-experience";
 
 function Home() {
   return (
-    <main>
-      <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:flex-row lg:gap-8">
-          <Image
-            src="/assets/profile-picture.jpg"
-            alt="Foto de Perfil do Rafael, obtida no LinkedIn"
-            className="max-w-sm rounded-lg shadow-2xl"
-            width={225}
-            height={300}
-          />
-          <div>
-            <div className="flex gap-1">
-              <h1 className="text-5xl font-bold">Oí, eu sou o Rafael!</h1>
-
-              <Contact method="linkedin" />
-              <Contact method="mail" />
-            </div>
-
-            <p className="py-6">
-              Desenvolvedor Front-End especializado em Next.js, TypeScript e Ecossistema
-              JavaScript/TypeScript com expertise em Design Systems.
-            </p>
-          </div>
-        </div>
-      </div>
+    <main className="mx-auto flex max-w-7xl flex-col gap-8 p-4">
+      <Hero />
+      <MyExperience />
     </main>
   );
 }

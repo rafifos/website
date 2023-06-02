@@ -19,7 +19,7 @@ const metadata: Metadata = {
 function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} mx-auto h-screen`}>
         <Providers>
           <Header />
           {children}
