@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "name": "website",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "run-p --print-label lint:*",
+    "lint:next": "next lint",
+    "lint:styles": "stylelint \"src/**/*.css\""
+  },
+  "dependencies": {
+    "next": "13.4.4",
+    "next-themes": "^0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.16.16",
+    "@types/react": "18.2.7",
+    "@types/react-dom": "18.2.4",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "autoprefixer": "10.4.14",
+    "daisyui": "^3.0.0",
+    "eslint": "^8.41.0",
+    "eslint-config-next": "13.4.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "8.4.24",
+    "prettier": "^2.8.8",
+    "stylelint": "^15.6.2",
+    "stylelint-config-clean-order": "^5.0.1",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-config-tailwindcss": "^0.0.7",
+    "tailwindcss": "3.3.2",
+    "typescript": "^5.0.4"
+  }
+}

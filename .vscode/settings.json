@@ -1,0 +1,12 @@
+{
+  "css.validate": false,
+  "jest.autoRun": "off",
+  "jest.coverageFormatter": "GutterFormatter",
+  "prettier.proseWrap": "always",
+  "stylelint.config": null,
+  "stylelint.reportDescriptionlessDisables": true,
+  "stylelint.reportInvalidScopeDisables": true,
+  "stylelint.reportNeedlessDisables": true,
+  "tailwindCSS.emmetCompletions": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}
