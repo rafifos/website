@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { ContactLink } from "@/atoms/contact-link";
+import { Contact } from "@/atoms/contact";
 
 function Home() {
   return (
@@ -18,8 +18,8 @@ function Home() {
             <div className="flex gap-1">
               <h1 className="text-5xl font-bold">Oí, eu sou o Rafael!</h1>
 
-              <ContactLink method="linkedin" />
-              <ContactLink method="mail" />
+              <Contact method="linkedin" />
+              <Contact method="mail" />
             </div>
 
             <p className="py-6">

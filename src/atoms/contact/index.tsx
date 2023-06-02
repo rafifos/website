@@ -1,3 +1,3 @@
-export { default as ContactLink } from "./component";
+export { default as Contact } from "./component";
 export * from "./constants";
 export * from "./types";

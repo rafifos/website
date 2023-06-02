@@ -2,9 +2,9 @@ import type { ContactLinkProps } from "./types";
 
 import Link from "next/link";
 
-import { ContactLinks } from "@/atoms/contact-link/constants";
+import { ContactLinks } from "@/atoms/contact/constants";
 
-function ContactLink({ method }: ContactLinkProps) {
+function Contact({ method }: ContactLinkProps) {
   const contactInfo = ContactLinks[method];
 
   const title = contactInfo.title;
@@ -20,4 +20,4 @@ function ContactLink({ method }: ContactLinkProps) {
   );
 }
 
-export default ContactLink;
+export default Contact;
