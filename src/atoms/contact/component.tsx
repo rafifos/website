@@ -13,7 +13,7 @@ function Contact({ method }: ContactLinkProps) {
 
   return (
     <Link href={url}>
-      <button className="btn btn-ghost btn-circle" type="button" title={title}>
+      <button className="btn-ghost btn-circle btn" type="button" title={title}>
         <Icon size={32} />
       </button>
     </Link>
