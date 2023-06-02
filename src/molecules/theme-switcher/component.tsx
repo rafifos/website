@@ -14,7 +14,7 @@ function SwitchTheme() {
         <MdOutlinePalette size={24} /> Tema <MdExpandMore />
       </summary>
 
-      <ul className="max-w-52 dropdown-content menu rounded-box max-h-[70vh] flex-nowrap overflow-scroll p-2 shadow-lg">
+      <ul className="max-w-52 dropdown-content menu rounded-box max-h-[70vh] flex-nowrap overflow-auto p-2 shadow-lg">
         {themes.map((theme, key) => (
           <li key={key} onClick={() => setTheme(theme as string)}>
             <a>{theme}</a>
