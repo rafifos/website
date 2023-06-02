@@ -10,11 +10,11 @@ function SwitchTheme() {
 
   return (
     <details className="dropdown-end dropdown z-40">
-      <summary className="btn m-1">
-        <MdOutlinePalette size={24} /> Tema
+      <summary className="btn-ghost btn-circle btn m-1">
+        <MdOutlinePalette size={24} />
       </summary>
 
-      <ul className="max-w-52 dropdown-content menu rounded-box max-h-[70vh] flex-nowrap overflow-scroll bg-base-200 p-2 shadow">
+      <ul className="max-w-52 dropdown-content menu rounded-box max-h-[70vh] flex-nowrap overflow-scroll p-2 shadow-lg">
         {themes.map((theme, key) => (
           <li key={key} onClick={() => setTheme(theme as string)}>
             <a>{theme}</a>
