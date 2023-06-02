@@ -11,7 +11,7 @@ function SwitchTheme() {
   return (
     <details className="dropdown dropdown-end z-40">
       <summary className="m-1 btn">
-        <MdOutlinePalette size={24} /> Trocar tema
+        <MdOutlinePalette size={24} /> Tema
       </summary>
 
       <ul className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
