@@ -1,4 +1,4 @@
-type ContactMethod = "linkedin" | "mail";
+type ContactMethod = "linkedin" | "github" | "mail";
 
 interface ContactLinkProps {
   method: ContactMethod;

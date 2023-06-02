@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Contact } from "@/atoms/contact";
+import { Contact, ContactLinks } from "@/atoms/contact";
 
 function Hero() {
   return (
@@ -18,8 +18,9 @@ function Hero() {
           <h1 className="text-5xl font-bold">Oí, eu sou o Rafael!</h1>
 
           <span>
-            <Contact method="linkedin" />
-            <Contact method="mail" />
+            {Object.keys(ContactLinks).map((method) => (
+              <Contact key={method} method={method as keyof typeof ContactLinks} />
+            ))}
           </span>
 
           <p className="pt-2">
