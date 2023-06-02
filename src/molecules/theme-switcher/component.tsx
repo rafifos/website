@@ -3,7 +3,7 @@
 import { useTheme } from "next-themes";
 import { MdOutlinePalette } from "react-icons/md";
 
-import { themes } from "@/molecules/switch-theme/constants";
+import { themes } from "@/molecules/theme-switcher/constants";
 
 function SwitchTheme() {
   const { setTheme } = useTheme();
@@ -16,7 +16,7 @@ function SwitchTheme() {
 
       <ul className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
         {themes.map((theme, key) => (
-          <li key={key} onClick={() => setTheme(theme)}>
+          <li key={key} onClick={() => setTheme(theme as string)}>
             <a>{theme}</a>
           </li>
         ))}

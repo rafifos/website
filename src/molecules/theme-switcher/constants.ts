@@ -1,4 +1,4 @@
-import type { Theme } from "@/molecules/switch-theme/types";
+import type { Theme } from "@/molecules/theme-switcher/types";
 
 /**
  * daisyyUI `^3.0.0` themes.

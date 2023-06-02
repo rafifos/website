@@ -1,7 +1,7 @@
 import { JetBrains_Mono } from "next/font/google";
 import Link from "next/link";
 
-import { SwitchTheme } from "@/molecules/switch-theme";
+import { SwitchTheme } from "@/molecules/theme-switcher";
 
 const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"], weight: "400" });
 
