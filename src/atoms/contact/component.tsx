@@ -12,10 +12,8 @@ function Contact({ method }: ContactLinkProps) {
   const Icon = contactInfo.icon;
 
   return (
-    <Link href={url}>
-      <button className="btn-ghost btn-square btn" type="button" title={title}>
-        <Icon size={32} />
-      </button>
+    <Link href={url} role="button" className="btn-ghost btn-square btn" title={title}>
+      <Icon size={32} />
     </Link>
   );
 }

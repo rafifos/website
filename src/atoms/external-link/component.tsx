@@ -12,10 +12,14 @@ function ExternalLink({ type }: ExternalLinkProps) {
   const Icon = linkInfo.icon;
 
   return (
-    <Link href={url} target="_blank">
-      <button className="btn-ghost btn-square btn" type="button" title={title}>
-        <Icon size={32} />
-      </button>
+    <Link
+      href={url}
+      target="_blank"
+      role="button"
+      className="btn-ghost btn-square btn"
+      title={title}
+    >
+      <Icon size={32} />
     </Link>
   );
 }
