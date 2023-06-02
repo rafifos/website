@@ -2,7 +2,7 @@ import { myExperiences } from "./constants";
 
 function MyExperience() {
   return (
-    <div className="flex flex-col gap-2">
+    <section className="flex flex-col gap-2">
       <h2 className="text-3xl font-bold">Minha experiência</h2>
 
       <ul className="steps steps-vertical">
@@ -16,7 +16,7 @@ function MyExperience() {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }
 

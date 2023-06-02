@@ -4,7 +4,7 @@ import { Contact } from "@/atoms/contact";
 
 function Hero() {
   return (
-    <div className="hero">
+    <section className="hero">
       <div className="hero-content flex-col gap-8 p-0 lg:flex-row-reverse">
         <Image
           src="/assets/profile-picture.jpg"
@@ -28,7 +28,7 @@ function Hero() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
