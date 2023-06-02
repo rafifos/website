@@ -9,12 +9,12 @@ function SwitchTheme() {
   const { setTheme } = useTheme();
 
   return (
-    <details className="dropdown dropdown-end z-40">
-      <summary className="m-1 btn">
+    <details className="dropdown-end dropdown z-40">
+      <summary className="btn m-1">
         <MdOutlinePalette size={24} /> Tema
       </summary>
 
-      <ul className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
+      <ul className="max-w-52 dropdown-content menu rounded-box max-h-[70vh] flex-nowrap overflow-scroll bg-base-200 p-2 shadow">
         {themes.map((theme, key) => (
           <li key={key} onClick={() => setTheme(theme as string)}>
             <a>{theme}</a>
