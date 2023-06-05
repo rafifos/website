@@ -14,7 +14,7 @@ const myExperiences: Experience[] = [
     current: false,
   },
   {
-    title: "Stefanini/Energisa",
+    title: "Energisa",
     current: true,
   },
 ];
