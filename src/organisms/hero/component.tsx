@@ -1,8 +1,12 @@
+import clsx from "clsx";
 import Image from "next/image";
 
 import { Contact, ContactLinks } from "@/atoms/contact";
+import { jetBrainsMono } from "@/utils/fonts";
 
 function Hero() {
+  const letteringClassNames = clsx(jetBrainsMono.className, "text-5xl font-bold");
+
   return (
     <section className="hero">
       <div className="hero-content flex-col gap-8 p-0 lg:flex-row-reverse">
@@ -15,7 +19,9 @@ function Hero() {
         />
 
         <div className="flex flex-col gap-2">
-          <h1 className="text-5xl font-bold">Oí, eu sou o Rafael!</h1>
+          <h1 className={letteringClassNames}>
+            Oi. <br /> Eu sou o Rafael!
+          </h1>
 
           <span>
             {Object.keys(ContactLinks).map((method) => (

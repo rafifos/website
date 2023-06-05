@@ -1,10 +1,9 @@
 import type { LogoProps } from "./types";
 
 import clsx from "clsx";
-import { JetBrains_Mono } from "next/font/google";
 import Link from "next/link";
 
-const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"], weight: "400" });
+import { jetBrainsMono } from "@/utils/fonts";
 
 function Logo({ className }: LogoProps) {
   const classNames = clsx(className, jetBrainsMono.className, "text-xl normal-case");
