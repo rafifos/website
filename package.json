@@ -37,7 +37,7 @@
     "postcss": "8.4.24",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
-    "stylelint": "^15.6.2",
+    "stylelint": "^15.6.3",
     "stylelint-config-clean-order": "^5.0.1",
     "stylelint-config-standard": "^33.0.0",
     "stylelint-config-tailwindcss": "^0.0.7",
