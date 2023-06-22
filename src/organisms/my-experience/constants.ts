@@ -15,6 +15,10 @@ const myExperiences: Experience[] = [
   },
   {
     title: "Energisa",
+    current: false,
+  },
+  {
+    title: "AeC",
     current: true,
   },
 ];
