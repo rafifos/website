@@ -4,13 +4,11 @@ import type { ReactNode } from "react";
 
 import { Analytics } from "@vercel/analytics/react";
 import clsx from "clsx";
-import { Inter } from "next/font/google";
 
 import Providers from "@/app/providers";
 import { Footer } from "@/organisms/footer";
 import { Header } from "@/organisms/header";
-
-const inter = Inter({ subsets: ["latin"] });
+import { inter, iosevka } from "@/styles/fonts";
 
 const metadata: Metadata = {
   title: "Rafael Julio | Desenvolvedor Front-End",
@@ -19,7 +17,11 @@ const metadata: Metadata = {
 };
 
 function RootLayout({ children }: { children: ReactNode }) {
-  const classNames = clsx(inter.className, "mx-auto flex h-screen flex-col");
+  const classNames = clsx(
+    inter.variable,
+    iosevka.variable,
+    "mx-auto flex h-screen flex-col font-sans"
+  );
 
   return (
     <html lang="pt-BR" suppressHydrationWarning>

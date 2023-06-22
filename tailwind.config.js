@@ -4,6 +4,14 @@ const daisyui = require("daisyui");
 module.exports = {
   content: ["./src/app/**/*.{ts,tsx,mdx}", "./src/{atoms,molecules,organisms}/**/*.tsx"],
   plugins: [daisyui],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)"],
+        mono: ["var(--font-iosevka)"],
+      },
+    },
+  },
   daisyui: {
     themes: true,
   },
