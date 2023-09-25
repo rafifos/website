@@ -2,25 +2,18 @@
   "root": true,
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:@typescript-eslint/strict",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:import/recommended",
     "plugin:import/typescript",
     "next/core-web-vitals",
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
-    "project": true,
-    "tsconfigRootDir": "./"
+    "EXPERIMENTAL_useProjectService": true,
+    "ecmaVersion": "latest"
   },
   "settings": {
-    "import/parsers": {
-      "@typescript-eslint/parser": [
-        ".ts",
-        ".tsx"
-      ]
-    },
     "import/resolver": {
       "node": true,
       "typescript": {
@@ -30,17 +23,13 @@
   },
   "rules": {
     "@typescript-eslint/consistent-type-imports": [
-      "error",
+      "warn",
       {
         "prefer": "type-imports"
       }
     ],
-    "@typescript-eslint/consistent-type-exports": [
-      "error",
-      {
-        "fixMixedExportsWithInlineTypeSpecifier": false
-      }
-    ],
+    "@typescript-eslint/consistent-type-exports": "warn",
+    "@typescript-eslint/no-import-type-side-effects": "warn",
     "import/order": [
       "warn",
       {

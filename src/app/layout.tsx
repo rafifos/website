@@ -20,7 +20,7 @@ function RootLayout({ children }: { children: ReactNode }) {
   const classNames = clsx(
     inter.variable,
     iosevka.variable,
-    "mx-auto flex h-screen flex-col font-sans"
+    "mx-auto flex h-screen flex-col font-sans",
   );
 
   return (

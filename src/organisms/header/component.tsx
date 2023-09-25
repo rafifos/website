@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className="navbar">
       <div className="navbar-start">
-        <Logo className="btn-ghost btn" />
+        <Logo className="btn btn-ghost" />
       </div>
       <div className="navbar-end">
         <ThemeSwitcher />

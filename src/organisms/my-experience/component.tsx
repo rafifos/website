@@ -10,7 +10,7 @@ function MyExperience() {
           <li
             key={key}
             data-content={experience.current ? "★" : null}
-            className="step-primary step"
+            className="step step-primary"
           >
             {experience.title}
           </li>

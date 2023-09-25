@@ -16,7 +16,7 @@ function ExternalLink({ type }: ExternalLinkProps) {
       href={url}
       target="_blank"
       role="button"
-      className="btn-ghost btn-square btn"
+      className="btn btn-square btn-ghost"
       title={title}
     >
       <Icon size={32} />
