@@ -1,8 +1,7 @@
 import Image from "next/image";
 
+import profilePic from "@/assets/profile-picture.jpg";
 import { Contact, ContactLinks } from "@/atoms/contact";
-
-import profilePic from "./assets/profile-picture.jpg";
 
 function Hero() {
   return (
