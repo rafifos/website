@@ -11,7 +11,7 @@
   "dependencies": {
     "@vercel/analytics": "^1.0.2",
     "clsx": "^2.0.0",
-    "daisyui": "^3.7.7",
+    "daisyui": "^3.8.0",
     "million": "^2.6.0-beta.16",
     "next": "^13.5.3",
     "next-themes": "^0.2.1",
