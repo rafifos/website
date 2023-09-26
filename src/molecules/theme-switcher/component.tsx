@@ -16,7 +16,7 @@ function ThemeSwitcher() {
         <MdExpandMore />
       </summary>
 
-      <ul className="max-w-52 menu dropdown-content rounded-box max-h-[70vh] flex-nowrap overflow-auto bg-base-100 p-2 shadow-lg">
+      <ul className="max-w-52 menu dropdown-content rounded-box max-h-[70vh] flex-nowrap overflow-auto bg-base-100 p-2 shadow-lg scrollbar-thin">
         {themes.map((theme, key) => (
           <li
             key={key}

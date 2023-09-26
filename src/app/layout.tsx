@@ -21,6 +21,7 @@ function RootLayout({ children }: { children: ReactNode }) {
     inter.variable,
     iosevka.variable,
     "mx-auto flex h-screen flex-col font-sans",
+    "scrollbar-thin scrollbar-track-base-200 scrollbar-thumb-accent scrollbar-corner-accent",
   );
 
   return (
