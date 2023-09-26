@@ -6,9 +6,9 @@ import { Analytics } from "@vercel/analytics/react";
 import clsx from "clsx";
 
 import Providers from "@/app/providers";
-import { inter, iosevka } from "@/assets/fonts";
 import { Footer } from "@/organisms/footer";
 import { Header } from "@/organisms/header";
+import { inter, jetbrainsMono } from "@/utils/fonts";
 
 const metadata: Metadata = {
   title: "Rafael Julio | Desenvolvedor Front-End",
@@ -19,7 +19,7 @@ const metadata: Metadata = {
 function RootLayout({ children }: { children: ReactNode }) {
   const classNames = clsx(
     inter.variable,
-    iosevka.variable,
+    jetbrainsMono.variable,
     "mx-auto flex h-screen flex-col font-sans",
     "scrollbar-thin scrollbar-track-base-200 scrollbar-thumb-accent scrollbar-corner-accent",
   );

@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-inter)"],
-        mono: ["var(--font-iosevka)"],
+        mono: ["var(--font-jetbrains-mono)"],
       },
     },
   },
