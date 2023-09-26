@@ -9,7 +9,7 @@ function ThemeSwitcher() {
   const { setTheme } = useTheme();
 
   return (
-    <details className="dropdown-end dropdown z-40">
+    <details className="dropdown dropdown-end z-40">
       <summary className="btn btn-ghost m-1">
         <MdOutlinePalette size={24} />
         <span className="hidden sm:inline-block">Tema</span>
