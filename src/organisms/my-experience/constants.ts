@@ -19,6 +19,10 @@ const myExperiences: Experience[] = [
   },
   {
     title: "AeC",
+    current: false,
+  },
+  {
+    title: "International School",
     current: true,
   },
 ];
